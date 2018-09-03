@@ -3,19 +3,21 @@
 * A little exercise:
 	- When you hear the term "cyber security", list some topics, issues, or things that come to mind. Free-for-all
   - Observations?
+    - Cyber Security is very broad and interdisciplinary
+    - WARNING about this course: you will feel dumb and lost at times because of the enormous amount of Computer Science content you have not learned (and may not even have time to learn).  From a former student: "At times this class made me feel dumb, I'll admit, but coming out the other side I feel like my eyes have been opened to another layer of the web of technology that surrounds us."
 * What this course is NOT
-* What this course IS and expectations
+* What this course IS and expectations, outcomes:
+  1. Question and debate everything, ask why
+  2. Gain the mindset of thinking like an attacker, #whatcouldpossiblygowrong
+  3. Gain the mindset to understand how things work and fail
+  4. THAT picture
+  5. Understand tradeoffs --which is what Security really is
+  6. The ultimate goal of this course, to be revisited on the last day of this class
+* The effect of not studying Security...
+  - The Tacoma Bridge Failure https://www.youtube.com/watch?v=XggxeuFDaDU
 * The schtick is very different in this course, and this may be arguably the most "different" course you will take in the CS curriculum
 * The definition of security in the context of technology, information, computers
 * Terminology: Is it Computer Security?  Is it Information Security (infosec)?  Is it Cyber Security?
-* Why study security?
-  - Undestanding how things work and fail
-	- So how far have we come? (or lack thereof)
-	- The Tacoma Bridge Failure https://www.youtube.com/watch?v=XggxeuFDaDU
-* Outcomes of this course:
-  1. Question and debate everything, ask why
-  2. Understand tradeoffs --which is what security really is
-  3. What's my ultimate goal for you in this course?  We'll revisit this on the last day of class.
 * Technology requirements for this class: a hypervisor, and Kali Linux
 * The basics you all absolutely need to have: experience and comfort with the command line
   - Why? Versatility, productivity, accessibility, scripting
