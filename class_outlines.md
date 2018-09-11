@@ -49,8 +49,8 @@
 * A packet: contains implementations of all the protocol layers; encapsulation model
 * A PCAP: a file of packet captures from a network
 
-# Monday, September 11th: Basic Packet Analysis
-* Last class: OSI model, a packet, PCAP
+# Tuesday, September 11th: Basic Packet Analysis
+* Last class: TCP Three-Way Handshake, OSI model, IP Header, TCP Header, RFCs, a packet, PCAP
 * simple.pcap
 * Things that you can do with PCAP files
   - Visualizing the traffic; see which computer is communicating with who
@@ -61,3 +61,30 @@
 * The Wall of Sheep
 * Ettercap
 * The next lab
+
+# Thursday, September 13th: Sniffing
+* Last class: we delved into basic packet analysis
+  - Visualized network at a given time using Etherape
+  - Extracted all images in PCAP using Driftnet
+  - Filter packets by IP address in Wireshark
+  - Extract username:password pairs sent in plaintext on the network using Ettercap
+  - Reconstructed a conversation in Wireshark via show TCP stream
+* Recent news: Tinder https://www.wired.com/story/tinder-lack-of-encryption-lets-strangers-spy-on-swipes/
+* An almost ugly spat: https://twitter.com/0xmchow/status/941145910213562369
+* So you may be curious: how did we at the Wall of Sheep capture all those packets?
+* tcpdump, Wireshark, ettercap
+* Two types of networks:
+  1. Unswitched - packets flow through all devices on network but you look at only the packets addressed to you......
+    - Welp... http://superuser.com/questions/191191/where-can-i-find-an-unswitched-ethernet-hub
+  2. Switched - packets flow through specific devices on network (most networks now)
+* Step 1: promiscuous mode
+* LAN Tap: http://hakshop.myshopify.com/products/throwing-star-lan-tap-pro
+* Address Resolution Protocol
+  - IP address to MAC address on a network
+  - Recall OSI model and packets
+  - `arp -a`
+  - ARP cache on machine for 20 minutes
+  - No authentication
+* ARP spoofing or ARP poisoning
+* Bettercap
+* Video: https://www.youtube.com/watch?v=9uiA6dGuEE0
