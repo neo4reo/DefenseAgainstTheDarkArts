@@ -88,3 +88,35 @@
 * ARP spoofing or ARP poisoning
 * Bettercap
 * Video: https://www.youtube.com/watch?v=9uiA6dGuEE0
+
+# Tuesday, September 18th: Scanning, Reconnaisance
+* Last class: sniffing unswitched and switched networks
+* Is sniffing still relevant today?
+* Preventing sniffing:
+  1. Use encryption and encrypted network protocols
+  2. VPN
+  3. Use switched network......?
+* Preventing ARP poisoning on switched network:
+  - anti-arpspoof
+  - ArpON
+  - Antidote
+  - Arpwatch
+* Scanning
+  - Why? Network reconnaissance.  Warfare 101
+  - What devices and computers are up?
+  - What ports are open on a computer?
+  - What services are running?
+  - Where are the computers geographically?
+  - Determine possible vulnerabilities
+* Is scanning still relevant today?
+* Basic method: ping sweep
+* Problems with ping?
+
+# Thursday, September 20th: Scanning, Part II
+* Last class: the idea of scanning, ping, Netcat...
+* Think poking holes, "ask questions"
+* Poking holes => finding interesting and unwanted stuff on networks
+  - https://pen-testing.sans.org/blog/2017/02/28/opening-a-can-of-active-defense-and-cyber-deception-to-confuse-and-frustrate-attackers
+* Netcat
+* Nmap
+* Geographical information: SHODAN
