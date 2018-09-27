@@ -138,7 +138,6 @@
   - `sudo nmap -D...`
   - spoofed connections
   - Must use real + alive IP address, else SYN flood
-* Rob Graham's Masscan
 * The first "D" (Distributed) in DDoS: attack source is more than one, often thousands of, unique IP addresses
 * SYN flood
   - The idea: exhaust states in the TCP/IP stack
