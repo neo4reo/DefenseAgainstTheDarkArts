@@ -166,3 +166,58 @@
   - Result: "However, many ping implementations allow the user to specify a packet size larger than 65,507 bytes. A grossly oversized ICMP packet can trigger a range of adverse system reactions such as denial of service (DoS), crashing, freezing, and rebooting."
 * ICMP Flood Attack => Overload victim with a huge number of ICMP echo requests with spoofed source IP addresses.
 * UDP Flood Attack => Same idea of ICMP flood attack but using UDP packets
+
+# Tuesday, October 2nd: Encoding
+* How to defend against DDoS?
+* About that target on the scanning lab
+* This week and next week: cryptography, the foundation of Computer Security
+* Encoding vs encryption: they are not the same
+  - Encoding: "The purpose of encoding is to transform data so that it can be properly (and safely) consumed by a different type of system. The goal is not to keep information secret, but rather to ensure that it’s able to be properly consumed."
+  - Encryption: "to transform data in order to keep it secret from others, e.g. sending someone a secret letter that only they should be able to read, or securely sending a password over the Internet. Rather than focusing on usability, the goal is to ensure the data cannot be consumed by anyone other than the intended recipient(s)."
+  - Source: https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/
+* So why did I give you a scanning lab, PCAP lab?  Finer points on target, set3.pcap
+* About that peculiar port on the honeypot...
+* About set3.pcap on the PCAPs lab:
+  - A goal of this class: recognition and mindset
+  - Base64: binary-to-text encoding scheme.  That is: binary data to ASCII
+  - http://stackoverflow.com/questions/6916805/why-does-a-base64-encoded-string-have-an-sign-at-the-end
+  - Why? Dangers in printing payload: https://unix.stackexchange.com/questions/73713/how-safe-is-it-to-cat-an-arbitrary-file
+  - Why? Basic authentication on web. Example: https://github.com/LiamRandall/BsidesDC-Training/blob/master/http-auth/http-basic-auth-multiple-failures.pcap
+* So far, you have been using tools like Ettercap, Nmap, Wireshark.  Now, you must learn how they work!
+
+# Thursday, October 4th: Cryptography
+* So now crypto...
+* Definitions
+* The golden rule: "Never Roll Your Own Crypto"
+* Crypto algorithms: symmetric, hash functions, asymmetric
+* Tradeoffs to consider:
+  - Cost of breaking a cipher
+  - Value of the information that is encrypted
+  - Time required to break info
+  - Lifetime of information?
+* The only secure crypto algorithm: One-Time Pad
+  - Video: https://www.khanacademy.org/computing/computer-science/cryptography/crypt/v/one-time-pad
+* Symmetric algorithms: DES, AES, RC4. What do they provide in terms of security? What do they not provide?
+* One way hash functions: MD5, SHA-1.  What do they provide in terms of security? What do they not provide?
+
+# Thursday, October 11th: Crypto, Part II
+* Last class: the golden rules of crypto, symmetric algorithms, one-way hash functions
+* Today: more on one-way hash functions, asymmetric crypto
+* Applications: checksums, Git hash (SHA-1), passwords
+* Storing passwords the wrong way
+* Storing passwords the wrong way, redux
+* Storing passwords the right way with a salt
+* Cracking user accounts on Linux systems:
+  - Use /etc/passwd and /etc/shadow files from Linux-based systems
+  - $algorithm$salt$hash
+  - $1$ = MD5
+  - $2$ = Blowfish
+  - $5$ = SHA-256
+  - $6$ = SHA-512
+* Tool: John the Ripper.  Default: simple list then brute force
+* Daniel Miessler's SecLists
+* The spring 2018 password cracking contest
+* Q: How long is your password good for?
+* Asymmetric crypto, public and private keys: RSA
+* Example: SSH, GitHub
+* What does asymmetric crypto does not provide?
